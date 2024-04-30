@@ -5,12 +5,12 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-tokio = { version = "1.35.1", features = ["full"] }
+tokio = { version = "1.35.1", features = ["sync"] }
 tracing = "0.1.40"
 h264 = { git = "https://github.com/wavey-ai/av-rs.git" }
 mse_fmp4 = { git = "https://github.com/wavey-ai/mse_fmp4.git" }
 bytes = "1.5.0"
-au = { git = "ssh://git@github.com/wavey-ai/au.git" }
+au = { git = "http://github.com/wavey-ai/au.git" }
 
 [profile.release]
 opt-level = 3
