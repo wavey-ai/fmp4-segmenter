@@ -1,7 +1,6 @@
 use au::{
     AuKind::{AAC, AVC},
-    AuPayload,
-    Fmp4,
+    AuPayload, Fmp4,
 };
 use bytes::{Buf, Bytes};
 use h264::{Bitstream, Decode, NALUnit, SequenceParameterSet};
@@ -114,9 +113,9 @@ impl Segmenter {
                             }
                         }
                         aac_timestamps.push(pts);
-                        //aac_buf.push(p);
+                        aac_buf.push(p);
                     } else {
-                        //aac_buf.push(p);
+                        aac_buf.push(p);
                     }
                 }
                 AVC => {
